@@ -1,0 +1,38 @@
+{
+  "name": "triple-tested",
+  "version": "1.0.0",
+  "description": "Deploying to GitHub Pages using GitHub Actions and triple testing it with Cypress",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "dev": "start-test docs:dev 8080/triple-tested/ cy:open",
+    "dev:ci": "start-test docs:dev 8080/triple-tested/ cy:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/triple-tested.git"
+  },
+  "keywords": [
+    "cypress",
+    "github-actions",
+    "github-pages",
+    "example"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/triple-tested/issues"
+  },
+  "homepage": "https://github.com/bahmutov/triple-tested#readme",
+  "devDependencies": {
+    "cypress": "4.2.0",
+    "serve": "11.3.0",
+    "start-server-and-test": "1.10.11",
+    "vuepress": "1.4.0"
+  }
+}

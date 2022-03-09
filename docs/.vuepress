@@ -1,0 +1,13 @@
+$ ls -la docs/
+total 16
+drwxr-xr-x   5 gleb  staff  160 Mar 22 17:23 .
+drwxr-xr-x  13 gleb  staff  416 Mar 22 17:30 ..
+drwxr-xr-x   4 gleb  staff  128 Mar 21 14:51 .vuepress
+-rw-r--r--   1 gleb  staff  101 Mar 22 17:28 README.md
+-rw-r--r--   1 gleb  staff  152 Mar 22 17:29 about.md
+
+$ cat docs/.vuepress/config.js
+module.exports = {
+  title: 'Triple Tested',
+  description: 'Example static site'
+}
